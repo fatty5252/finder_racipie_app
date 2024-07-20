@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Practice from './practics';
 import NavBar from './components/common/NavBar';
