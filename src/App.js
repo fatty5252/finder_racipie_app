@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Practice from './practics';
+import NavBar from './components/common/NavBar';
+import Home from './pages/Home';
+import Racipies from './pages/Racipies';
+import RecipesDetails from './components/RecipesDetails';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <NavBar/>
+    <Routes>
+      <Route path="/practice" element={<Practice/>}/>
+      <Route path="/" element={<Home/>}/>
+      <Route path='/racipies' element={<Racipies/>}/>
+      <Route path='/recipes/:id' element={<RecipesDetails/>}/>
+      </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
