@@ -7,7 +7,7 @@ export default function RacipieList({ recipes, searchQuery }) {
     <Container>
     <Header
     size='huge'
-    content={`RECIPE LIST FOR ${searchQuery} `}
+    content={`RECIPE LIST FOR ${searchQuery.toUpperCase()} `}
     textAlign='center'
     style={{marginBottom:'20px'}}
     />
