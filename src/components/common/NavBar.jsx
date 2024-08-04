@@ -10,7 +10,7 @@ const NavBar=()=>{
         <>
         <Menu borderless fixed="top">
             <Menu.Item>
-                <img style={{width: '100px', height:"60px"}} src="./images/navlogo.png" alt="logo img"/>
+                <img style={{width: '100px', height:"60px"}} src="./images/navLogo.png" alt="logo img"/>
             </Menu.Item>
             <Menu.Item style={{fontSize: '20px', fontWeight:"bold"}} name="Home" as={Link} to="/"/>
             <Menu.Item style={{fontSize: '20px', fontWeight:"bold"}} name="Recipes" as={Link} to="/racipies"/>

@@ -16,7 +16,7 @@ const RecipesDetails = () => {
       }
     };
     getData();
-  }, []);
+  }, [id]);
 
   return (
     <>
@@ -59,8 +59,7 @@ const RecipesDetails = () => {
               ))}
           </Segment.Group>
         </Grid.Column>
-      </Grid>{" "}
-      : null
+      </Grid>
     </>
   );
 };
